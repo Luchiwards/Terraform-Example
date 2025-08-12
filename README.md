@@ -44,6 +44,7 @@ terraform apply
 ## Best practices
 
 - Do not hardcode credentials in `.tf` files. Use a named profile, environment variables, or AWS SSO.
+- Resource naming and taging should always use `-` and never use `_`
 - Prefer short‑lived credentials (SSO or `aws configure sso`) over long‑lived access keys.
 - Keep `terraform.tfvars` and state files out of git (see `.gitignore`).
 
